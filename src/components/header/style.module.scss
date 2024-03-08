@@ -1,0 +1,14 @@
+.headerContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 16px;
+  background-color: #010409;
+
+  img {
+    margin-left: auto;
+    width: 96px;
+    height: 96px;
+  }
+}

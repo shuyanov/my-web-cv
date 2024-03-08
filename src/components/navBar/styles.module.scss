@@ -1,0 +1,30 @@
+.navContainer {
+  width: 338px;
+
+  .imgAvatar {
+    width: 338px;
+    height: 338px;
+  }
+}
+
+.experienceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contactBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  padding-bottom: 4px;
+  border-bottom: 1px solid white;
+  margin-bottom: 16px;
+
+  .linkedContainer {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 170px 170px;
+  }
+}
