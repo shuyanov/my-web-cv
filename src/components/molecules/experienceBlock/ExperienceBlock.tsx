@@ -10,7 +10,6 @@ export const ExperienceBlock = ({ src, text }: TExperienceBlock) => {
   return (
     <div className={styles.experienceBlock}>
       <img src={src} />
-      {/* <span>{text}</span> */}
       {text}
     </div>
   );

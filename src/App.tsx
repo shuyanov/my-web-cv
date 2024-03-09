@@ -1,15 +1,13 @@
 import React from "react";
+import { MainPage } from "./components/view/MainPaga";
+import { Header } from "./components/cells/header/header";
 import "./App.css";
-import { Header } from "./components/header/header";
-import { NavBar } from "./components/navBar/navBar";
 
 function App() {
   return (
     <div>
       <Header />
-      <div className="bodyContainer">
-        <NavBar />
-      </div>
+      <MainPage />;
     </div>
   );
 }

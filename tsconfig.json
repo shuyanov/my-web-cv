@@ -6,6 +6,17 @@
     "module": "ESNext",
     "skipLibCheck": true,
 
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["./src/*"],
+      "assets": [".src/assets/*"],
+      "components": [".src/components/*"],
+      "atoms": [".src/components/atoms/*"],
+      "cells": [".src/components/cells/*"],
+      "molecules": [".src/components/molecules/*"],
+      "constants": [".src/constants/*"]
+    },
+
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,

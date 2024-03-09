@@ -1,11 +1,11 @@
 import React from "react";
-import shuyanov from "../../assets/shuyanoov.png";
+import shuyanov from "assets/shuyanoov.png";
 import styles from "./styles.module.scss";
-import digitable from "../../assets/iconCompany/dt.svg";
-import { ContactBlock } from "./contactBlock";
-import { ExperienceBlock } from "../experienceBlock/ExperienceBlock";
-import egg from "../../assets/iconCompany/egg.svg";
-import cnet from "../../assets/iconCompany/cnet.svg";
+import digitable from "assets/iconCompany/dt.svg";
+import egg from "assets/iconCompany/egg.svg";
+import cnet from "assets/iconCompany/cnet.svg";
+import { ContactBlock } from "molecules/contactBlock/contactBlock";
+import { ExperienceBlock } from "molecules/experienceBlock/ExperienceBlock";
 
 export const NavBar = () => {
   return (
@@ -34,7 +34,7 @@ export const NavBar = () => {
               <br />
               Stack: TypeScript, React, Axios, Redux Toolkit, WebPack
               <br />
-              Команда более 10человек
+              Команда более 10 человек
             </span>
           }
         />

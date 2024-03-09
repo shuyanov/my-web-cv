@@ -1,0 +1,34 @@
+.contactBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  padding-bottom: 4px;
+  border-bottom: 1px solid white;
+  margin-bottom: 16px;
+
+  .linkedContainer {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 170px 170px;
+    margin-bottom: 8px;
+  }
+
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .name {
+    font-size: 42px;
+  }
+
+  .location {
+    font-size: 25px;
+  }
+
+  .experience {
+    font-size: 25px;
+  }
+}
