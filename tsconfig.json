@@ -2,21 +2,37 @@
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "module": "ESNext",
     "skipLibCheck": true,
-
     "baseUrl": ".",
     "paths": {
-      "src/*": ["./src/*"],
-      "assets": [".src/assets/*"],
-      "components": [".src/components/*"],
-      "atoms": [".src/components/atoms/*"],
-      "cells": [".src/components/cells/*"],
-      "molecules": [".src/components/molecules/*"],
-      "constants": [".src/constants/*"]
+      "src/*": [
+        "./src/*"
+      ],
+      "assets/*": [
+        "./src/assets/*"
+      ],
+      "components/*": [
+        "./src/components/*"
+      ],
+      "atoms/*": [
+        "./src/components/atoms/*"
+      ],
+      "cells/*": [
+        "./src/components/cells/*"
+      ],
+      "molecules/*": [
+        "./src/components/molecules/*"
+      ],
+      "constants/*": [
+        "./src/constants/*"
+      ]
     },
-
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
@@ -24,13 +40,18 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": [
+    "src"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
 }

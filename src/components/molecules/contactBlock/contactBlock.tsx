@@ -1,7 +1,5 @@
-import React from "react";
 import styles from "./styles.module.scss";
 
-import phone from "assets/linkIcon/phone.svg";
 import git from "assets/linkIcon/git.svg";
 import linkedIn from "assets/linkIcon/linkedIn.svg";
 import tg from "assets/linkIcon/tg.svg";

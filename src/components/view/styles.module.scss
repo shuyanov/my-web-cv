@@ -1,7 +1,12 @@
 .bodyContainer {
+  height: 100vh;
+  padding-top: 32px;
+  padding-left: 48px;
+  padding-right: 48px;
+
   background-color: #0d1117;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  align-items: start;
+
+  gap: 48px;
 }

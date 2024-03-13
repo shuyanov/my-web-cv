@@ -1,4 +1,3 @@
-import React from "react";
 import shuyanov from "assets/shuyanoov.png";
 import styles from "./styles.module.scss";
 import digitable from "assets/iconCompany/dt.svg";
