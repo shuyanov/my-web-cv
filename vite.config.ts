@@ -15,4 +15,5 @@ export default defineConfig({
       constants: "/src/constants",
     },
   },
+  base: "/my-web-cv",
 });
