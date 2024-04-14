@@ -6,9 +6,27 @@
   gap: 16px;
   background-color: #010409;
 
+  .menuButton {
+    color: white;
+    text-decoration: 2px underline white;
+    font-size: 32px;
+    padding-left: 48px;
+  }
+
   img {
     margin-left: auto;
     width: 96px;
     height: 96px;
+  }
+}
+
+.atribute {
+  text-decoration: none;
+  color: black;
+}
+
+.backButton {
+  svg {
+    fill: white;
   }
 }
