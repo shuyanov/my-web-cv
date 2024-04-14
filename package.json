@@ -12,6 +12,7 @@
     "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
     "gh-pages": "^6.1.1",
     "i": "^0.3.7",
     "npm": "^10.5.1",
