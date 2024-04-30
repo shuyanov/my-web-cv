@@ -4,6 +4,8 @@ import App from "./App.tsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Cnet } from "./components/view/Cnet.tsx";
+import { Digitable } from "./components/view/Digitable.tsx";
+import { Garpix } from "./components/view/Garpix.tsx";
 
 const router = createBrowserRouter([
   {
@@ -16,11 +18,11 @@ const router = createBrowserRouter([
   },
   {
     path: "my-web-cv/digitable",
-    element: <Cnet />,
+    element: <Digitable />,
   },
   {
     path: "my-web-cv/garpix",
-    element: <Cnet />,
+    element: <Garpix />,
   },
 ]);
 
