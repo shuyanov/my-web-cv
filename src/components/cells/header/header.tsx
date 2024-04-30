@@ -1,10 +1,10 @@
-// import sun from "../../../assets/sun.svg";
 import Button from "@material-ui/core/Button";
 import styles from "./style.module.scss";
 import { useState } from "react";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import backIcon from "assets/linkIcon/back.svg";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -16,26 +16,28 @@ export const Header = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  var currentUrl = window.location.pathname;
-  console.log(currentUrl);
+
+  const currentUrl = window.location.pathname;
 
   return (
     <header className={styles.headerContainer}>
       {currentUrl != "/my-web-cv" && (
         <Button aria-controls="simple-menu" aria-haspopup="true">
-          <a href="/my-web-cv">
+          <Link to="/my-web-cv">
             <img src={backIcon} className={styles.backButton} />
-          </a>
+          </Link>
         </Button>
       )}
-      <Button
-        className={styles.menuButton}
-        aria-controls="simple-menu"
-        aria-haspopup="true"
-        onClick={handleClick}
-      >
-        My experience
-      </Button>
+      {currentUrl === "/my-web-cv" && (
+        <Button
+          className={styles.menuButton}
+          aria-controls="simple-menu"
+          aria-haspopup="true"
+          onClick={handleClick}
+        >
+          My experience
+        </Button>
+      )}
       <Menu
         id="simple-menu"
         anchorEl={anchorEl}
@@ -44,19 +46,19 @@ export const Header = () => {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose}>
-          <a href="/digitable" className={styles.atribute}>
+          <Link to="digitable" className={styles.atribute}>
             Digitable
-          </a>
+          </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <a href="/garpix" className={styles.atribute}>
+          <Link to="garpix" className={styles.atribute}>
             Garpix
-          </a>
+          </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <a href="my-web-cv/cnet" className={styles.atribute}>
+          <Link to="cnet" className={styles.atribute}>
             C.NET
-          </a>
+          </Link>
         </MenuItem>
       </Menu>
     </header>
