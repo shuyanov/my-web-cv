@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
+  base: "/my-web-cv.github.io/",
   resolve: {
     alias: {
       src: "/src",
@@ -14,5 +15,4 @@ export default defineConfig({
       constants: "/src/constants",
     },
   },
-  base: "/my-web-cv.github.io/",
 });
