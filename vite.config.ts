@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/my-web-cv.github.io/",
+  base: "/my-web-cv/",
   resolve: {
     alias: {
       src: "/src",
