@@ -47,7 +47,7 @@ export const Header = () => {
       >
         <MenuItem onClick={handleClose}>
           <Link to="digitable" className={styles.atribute}>
-            Digitable
+            DigiTable
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
