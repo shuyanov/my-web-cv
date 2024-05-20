@@ -14,5 +14,5 @@ export default defineConfig({
       constants: "/src/constants",
     },
   },
-  base: "/shuyanov.github.io/",
+  base: "/my-web-cv/",
 });
