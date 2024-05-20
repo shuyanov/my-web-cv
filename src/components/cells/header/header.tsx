@@ -21,14 +21,14 @@ export const Header = () => {
 
   return (
     <header className={styles.headerContainer}>
-      {currentUrl != "/my-web-cv" && (
+      {currentUrl != "/my-web-cv/" && (
         <Button aria-controls="simple-menu" aria-haspopup="true">
           <Link to="/my-web-cv">
             <img src={backIcon} className={styles.backButton} />
           </Link>
         </Button>
       )}
-      {currentUrl === "/my-web-cv" && (
+      {currentUrl === "/my-web-cv/" && (
         <Button
           className={styles.menuButton}
           aria-controls="simple-menu"
