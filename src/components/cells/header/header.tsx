@@ -22,11 +22,11 @@ export const Header = () => {
   return (
     <header className={styles.headerContainer}>
       {currentUrl != "/my-web-cv/" && (
-        <Button aria-controls="simple-menu" aria-haspopup="true">
-          <Link to="/my-web-cv/">
+        <Link to="/my-web-cv/">
+          <Button aria-controls="simple-menu" aria-haspopup="true">
             <img src={backIcon} className={styles.backButton} />
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       )}
       {currentUrl === "/my-web-cv/" && (
         <Button
@@ -45,21 +45,15 @@ export const Header = () => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>
-          <Link to="digitable" className={styles.atribute}>
-            DigiTable
-          </Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <Link to="garpix" className={styles.atribute}>
-            Garpix
-          </Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <Link to="cnet" className={styles.atribute}>
-            C.NET
-          </Link>
-        </MenuItem>
+        <Link to="digitable" className={styles.atribute}>
+          <MenuItem onClick={handleClose}>DigiTable</MenuItem>
+        </Link>
+        <Link to="garpix" className={styles.atribute}>
+          <MenuItem onClick={handleClose}>Garpix</MenuItem>
+        </Link>
+        <Link to="cnet" className={styles.atribute}>
+          <MenuItem onClick={handleClose}>C.NET</MenuItem>
+        </Link>
       </Menu>
     </header>
   );
