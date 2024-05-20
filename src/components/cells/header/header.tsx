@@ -23,7 +23,7 @@ export const Header = () => {
     <header className={styles.headerContainer}>
       {currentUrl != "/my-web-cv/" && (
         <Button aria-controls="simple-menu" aria-haspopup="true">
-          <Link to="/my-web-cv">
+          <Link to="/my-web-cv/">
             <img src={backIcon} className={styles.backButton} />
           </Link>
         </Button>
