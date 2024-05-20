@@ -1,4 +1,3 @@
-import React from "react";
 import { Header } from "../cells/header/header";
 import egg from "assets/iconCompany/egg.svg";
 import styles from "./styles.module.scss";

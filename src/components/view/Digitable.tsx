@@ -1,4 +1,3 @@
-import React from "react";
 import { Header } from "../cells/header/header";
 import dt from "assets/iconCompany/dt.svg";
 import styles from "./styles.module.scss";

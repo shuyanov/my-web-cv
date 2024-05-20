@@ -1,4 +1,3 @@
-import React from "react";
 import { Header } from "../cells/header/header";
 import cnet from "assets/iconCompany/cnet.svg";
 import styles from "./styles.module.scss";
