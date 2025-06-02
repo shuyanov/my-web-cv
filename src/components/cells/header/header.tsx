@@ -48,7 +48,7 @@ export const Header = () => {
         <Link to="digitable" className={styles.atribute}>
           <MenuItem onClick={handleClose}>DigiTable</MenuItem>
         </Link>
-        <Link to="garpix" className={styles.atribute}>
+        <Link to="NOTgarpix" className={styles.atribute}>
           <MenuItem onClick={handleClose}>Garpix</MenuItem>
         </Link>
         <Link to="cnet" className={styles.atribute}>
